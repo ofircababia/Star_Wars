@@ -1,0 +1,167 @@
+#loading_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.movie-list {
+  opacity: 0.3;
+  transition: opacity 1s ease-in-out;
+}
+
+.movie-list.visible {
+  opacity: 10;
+}
+
+#loading_icon{
+  font-size: 100px;
+  animation: spin 2s linear infinite;
+}
+
+button{
+  border-width: 0cap;
+  border-radius: 10px;
+}
+
+div,button{
+  border-radius: 10px;
+  
+}
+StarBorderIcon{
+  background-color: white;
+}
+
+.App {
+  position: relative; 
+  color: white;
+}
+
+.App::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2000px;
+  background-image: url("./images/starwars.jpeg");
+  background-size: cover;
+  filter: blur(10px); 
+  z-index: -1; 
+}
+
+
+p {
+  margin-top: 160px;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 10px;
+  color: white;
+}
+
+.class1{
+  background-image: url("./images/1.jpg");
+ 
+}
+.class2{
+  background-image: url("./images/2.jpg");
+ 
+}
+.class3{
+  background-image: url("./images/3.jpg");
+ 
+}
+.class4{
+  background-image: url("./images/4.jpg");
+ 
+}
+
+.class5{
+  background-image: url("./images/5.jpg");
+ 
+}
+.class6{
+  background-image: url("./images/6.jpg");
+  
+}
+.images{
+  background-size: cover; /* Scales image to cover the div */
+  width: 90%; /* Set desired width for the div */
+  height: 200px; /* Set desired height for the div */
+  margin-bottom: 10%;
+  display: block;
+}
+
+.row{
+  position: relative;
+  
+}
+
+#backgroundimage{
+  position: relative;
+  top:20px;
+  height:300px;
+  width: 50%;
+  padding-bottom: 8%;
+  margin-left: 25%;
+  background-size: cover;
+}
+
+
+h2{
+  position: relative;
+  top:50%;
+  left: 5%;
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+
+#icon{
+  margin-top: 5%;
+  position: relative;
+  left:10%;
+  top:50%;
+  color:white;
+  float:left;
+}
+
+
+.chgPos{
+  position: relative;
+  left: 18px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
